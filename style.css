@@ -82,12 +82,9 @@ input:focus { color: #000 !important; }
     .answer, .question { max-width: 260px; }
     .modal-content { margin: 0 auto; max-width: 320px; padding: 10px; }
     .question { margin: 0 0 15px auto; }
+    #myModal { padding-top: 10px; background: #fcf9ff; }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
     .modal-content { max-width: 450px; }
 }
-
-/* @media only screen and (min-width: 768px) {
-
-} */
