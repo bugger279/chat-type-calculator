@@ -1,0 +1,93 @@
+/* Fonts Import*/
+@font-face {
+    font-family: nexaBold;
+    src: url(fonts/NexaBold.ttf);
+}
+@font-face {
+    font-family: nexa;
+    src: url(fonts/NexaLight.ttf);
+}
+
+/* General */
+body { margin: auto; font-family: nexa; }
+a { text-decoration: none; }
+p { color: #353535; line-height: 28px; font-size: 21px; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 15px; }
+.inner-container { max-width: 900px; margin: 0 auto; }
+h1, h2, h3, h4, h5, h6 { font-family: nexaBold; font-size: 21px; margin: 0; }
+img { max-width: 100%; }
+
+/* Header */
+.header { padding: 20px 0; }
+
+/* Main Section */
+.task-example span { display: block; }
+.task-example { margin-top: 70px; }
+
+/* Footer Section */
+.footer { background: url(images/footerBg.svg); padding: 40px 0; background-position: center; background-size: cover; margin-top: 70px; font-size: 16px; color: #FFFFFF; line-height: 22px; }
+.footer h3 { font-size: 16px; }
+.score { padding: 0; list-style: none; margin: 15px 0 0; }
+.grid-box { display: flex; flex-flow: row wrap; }
+.col-35 { width: 35%; }
+.col-65 { width: 65%; }
+
+/* Calculator Icon */
+.calculatorBox { position: fixed; bottom: 15%; right: 10%; }
+#myBtn { background: transparent; border: 0; cursor: pointer; }
+/**** Modal CSS *****/
+.modal { display: none; position: fixed; z-index: 1; padding-top: 100px; left: 0; top: 0px; width: 100%; height: 100%; overflow: auto; background-color: rgb(0,0,0);  background-color: rgba(0,0,0,0.0); }
+/* Modal Content */
+.modal-content { margin: 0 60px 0 auto; padding: 20px 20px 20px; width: 100%; position: relative; max-width: 450px; background: #FCF9FF; box-shadow: 0 2px 4px 0 #F8F1FF; }
+/* The Close Button */
+.close { color: #a850ff; font-size: 50px; font-weight: bold; position: absolute; right: 20px; top: 0; transition: 0.3s all ease-in-out; }
+.close:hover, .close:focus { color: #000; text-decoration: none; cursor: pointer; }
+/* calculator data */
+.calc-datas { margin-top: 50px; }
+.advisoryName { font-size: 12px; color: #353535; letter-spacing: 0; }
+.answer, .question { display: block; margin-bottom: 15px; max-width: 290px; padding: 15px; }
+.answer { background: #FFFFFF; box-shadow: 0 2px 6px 0 #F8F0FF; border-radius: 2px 15px 15px 15px; }
+.question { opacity: 0.32; background: #D8B0FF; box-shadow: 0 2px 6px 0 #D7FFFE; border-radius: 15px 2px 15px 15px; margin: 0 0 15px auto; }
+
+.userIcon img { border-radius: 50%; border: 1px solid #a850ff; }
+#inputData { display: inline-block; position: relative; left: 15px; z-index: 1; width: 100%; max-width: 365px; }
+#inputData input { background: #FFFFFF; border-radius: 12.6px; border: 0; height: 20px; padding: 8px; font-size: 12px; color: #EAE5FF; letter-spacing: 0; line-height: 8.06px; width: 100%; }
+#calcaulate { z-index: 11; position: relative; display: inline-block; right: 6px; cursor: pointer; }
+.inputFieldWrapper { padding-top: 70px; }
+input:focus { color: #000 !important; }
+.calc-datas { margin-top: 50px; max-height: 250px; height: 100%; overflow-y: scroll; }
+/* #inputData { top: -13px; } */
+.userIcon { width: 10%; }
+#inputData { width: 80%; }
+#calcaulate { right: 0; width: 10%; }
+
+.input-grid { display: flex; flex-flow: row wrap; }
+
+
+
+/* Mobile View */
+@media only screen and (max-width: 767px) {
+    p { font-size: 16px; }
+    h3 { font-size: 16px;}
+    .task-example { margin-top: 20px; }
+    .grid-box { flex-direction: column; }
+    .col-35 { width: 100%; }
+    .col-65 { width: 100%; margin-top: 25px; }
+    .footer h3 { font-size: 14px; }
+    .score li { font-size: 14px; }
+    .logo-section img { max-width: 50px; }
+    .footer { margin-top: 30px; }
+    .calculatorBox { position: fixed; bottom: 40%; max-width: 60px; }
+    .close { right: 30px; }
+    .answer, .question { max-width: 260px; }
+    .modal-content { margin: 0 auto; max-width: 320px; padding: 10px; }
+    .question { margin: 0 0 15px auto; }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .modal-content { max-width: 450px; }
+}
+
+/* @media only screen and (min-width: 768px) {
+
+} */
